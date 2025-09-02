@@ -10,7 +10,10 @@ public class Calculos {
      * @return sumatoria
      */
     int sumarSerie(int x, int y) {
-        throw new UnsupportedOperationException("En construcción.");
+        int suma=0;
+        for(int i =x, i<y; i++)
+            suma=suma+i;
+        return suma;
     }
 
     /**
