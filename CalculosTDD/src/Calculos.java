@@ -32,7 +32,16 @@ public class Calculos {
      * @return cantidad de vocales
      */
     int vocales(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+        int contador = 0;
+        frase = frase.toLowerCase(); // convertir todo a minúsculas
+
+        for (int i = 0; i < frase.length(); i++) {
+            char c = frase.charAt(i);
+            if ("aeiou".indexOf(c) != -1) {  // si es vocal
+                contador++;
+            }
+        }
+        return contador;
     }
 
     /**
